@@ -1,0 +1,125 @@
+<!--
+Alois Wirkes
+EscuelaWeb
+Curso de HTML5 y CSS3 Desde cero
+Enero - Febrero 2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etiquetas HTML</title>
+</head>
+<body>
+    <!--
+        Instrucciones Emmet:
+            >  .... Contiene el siguiente elemento
+            () .... Agrupar elementos
+            +  .... Añadir elemento hermano
+            {} .... Textos
+            $  .... Toma el valor de la iteración
+            *X .... Cantidad de iteraciones
+            [] .... Para colocar atributos a las etiquetas. Para cada atributo unos corchetes
+            #  .... Para añadir el atributo id a una etiqueta
+            .  .... Para añadir el atributo class a una etiqueta
+    -->
+    
+    <!-- ctrl+k+c .... Comando para comentar-->
+    <!-- (h$>{Título $})*6 -->
+    <h1 id="primerasec">Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <br>
+    
+    <!-- section>(header>(h1>{MI Primera Sección})+nav>ul>(li>a>{Menú $})*3)+(article>(header>{Mi Artículo})+((p>lorem20)*2)+footer>span>{Desarrollado por @wirkix})+footer>span>{Pie de Sección} -->
+    <section>
+        <header>
+            <h1>Mi Primera Sección</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Menú 1</a></li>
+                    <li><a href="">Menú 2</a></li>
+                    <li><a href="">Menú 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <header>Mi Artículo</header>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quae mollitia id temporibus expedita atque necessitatibus consequuntur aperiam quasi a.</p>
+            <p>Vero, culpa in! Doloribus, consectetur cupiditate dolorum molestiae esse laborum facere ex impedit non accusantium et sit delectus adipisci commodi?</p>
+            <footer><span>Desarrollado por @wirkix</span></footer>
+        </article>
+        <footer><span>Pie de Sección</span></footer>
+    </section>
+    <br>
+
+    <!-- table[width="100%"][border]>(thead>tr>(th>{Nombre})*3)+tbody>(tr>(td>{Palabra})*3)*3 -->
+    <table width="100%" border="">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Nombre</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td align="left">Palabra</td>
+                <td>Palabra</td>
+                <td>Palabra</td>
+            </tr>
+            <tr>
+                <td>Palabra</td>
+                <td>Palabra</td>
+                <td>Palabra</td>
+            </tr>
+            <tr>
+                <td>Palabra</td>
+                <td>Palabra</td>
+                <td>Palabra</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- ul>(li>a>{Menú $})*2 -->
+    <ul>
+        <!--Link a un página fuera del proyecto -->
+        <li title="Wikipedia"><a href="https://www.wikipedia.org" target="_blank">Menú 1</a></li> 
+        <!--Link a un página dentro del proyecto -->
+        <li title="Página 1"><a href="perfil1.html" target="_blank">Menú 2</a></li>
+        <!--Link a una sección dentro de la página -->
+        <li title="Título 1"><a href="#primerasec">Menú 3</a></li>
+    </ul> 
+
+    <!-- Referencia a una imagen dentro del proyecto -->
+    <img width="600" height="900" src="images/les miserables movie poster.jpg" alt="Les Miserables" title="Les Miserables">
+    <br>
+
+    <!-- Referencia a una imagen fuera del proyecto -->
+    <img src="https://laventanalibreria.com/13841-large_default/los-miserables.jpg" alt="Les Miserables por Víctor Hugo" title="Les Miserables">
+    <br>
+
+    <!-- Etiqueta para incluir contenido web externo al proyecto -->
+    <!-- No se recomienda su uso, sin embargo se suele utilizar para embeber videos de Youtube o mapas de Google Maps -->
+    <!-- <iframe src="https://laventanalibreria.com/tienda-clasicos-universales/13844-los-miserables.html" frameborder="20" width="100%" height="auto"></iframe> -->
+
+    <!-- Para obtener el iframe de un video de Youtube, estando en el video se le da a compartir>insertar y se copia el iframe que genera Youtube -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/EZngbEj3W1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <br>
+
+    <!-- Etiqueta para incluir archivos de audio -->
+    <audio controls autoplay loop muted src="multimedia/Les Miserables - Do You Hear The People Sing.mp3">Tu navegador no soporta HTML5</audio>
+    <br>
+
+    <!-- Etiqueta para incluir archivos de video -->
+    <video controls autoplay muted src="multimedia/Les Miserables - Do You Hear The People Sing.mp4">Tu navegador no soporta HTML5</video>
+
+</body>
+</html>
