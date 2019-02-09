@@ -1,0 +1,48 @@
+body{
+    background-color: #474787;
+}
+
+#secprin{
+    background-color: #d1ccc0;
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#sectitle{
+    background-color: #34ace0;
+    padding: 5%;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-redonda{
+    border-radius: 50%;
+}
+
+.padre{
+    display: table;
+}
+
+.hijo{
+    display: table-cell;
+}
+
+.parrafo{
+    padding: 15px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-style: italic;
+    color: #2c2c54;
+}
+
+#text-footer{
+    text-align: center;
+    color: #b33939;
+    font-size: 20px;
+    font-weight: bold;
+}
